@@ -1,0 +1,96 @@
+media:
+  input: assets/images
+  output: /assets/images
+  rename: safe
+  extensions: [jpg, jpeg, png, webp]
+content:
+  - name: site
+    label: Website settings and text
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: business_name, label: Shop name, type: string }
+      - { name: business_subtitle, label: Subtitle, type: string }
+      - { name: tagline, label: Tagline, type: string }
+      - { name: hero_kicker, label: Hero eyebrow text, type: string }
+      - { name: hero_title, label: Hero heading, type: string }
+      - { name: hero_description, label: Hero description, type: text }
+      - { name: intro_title, label: Intro heading, type: string }
+      - { name: intro_text, label: Intro paragraph, type: text }
+      - { name: phone_primary, label: Main phone (call button), type: string }
+      - { name: phone_secondary, label: Second phone, type: string }
+      - { name: address, label: Shop address, type: string }
+      - { name: google_maps_link, label: Google Maps directions URL, type: string }
+      - { name: google_reviews_link, label: Read Google Reviews URL, type: string }
+      - { name: google_review_write_link, label: Leave a Review URL, type: string }
+      - { name: google_photos_link, label: Google Maps photos URL, type: string }
+      - name: google_reviews_widget_embed_code
+        label: Automatic Google reviews widget embed code
+        type: text
+        description: Copy the embed snippet from your own free RepU Google Reviews widget. New verified reviews then update on the provider schedule. Do not paste a Google Maps URL here.
+      - name: google_photos_widget_embed_code
+        label: Optional Google Business Photos widget embed code
+        type: text
+        description: Optional separate Google Photos widget code (such as SociableKIT). Free tiers may require manual sync; automatic photo updates can require payment.
+
+      - { name: instagram, label: Instagram URL, type: string }
+      - { name: facebook, label: Facebook URL, type: string }
+      - { name: tiktok, label: TikTok URL, type: string }
+      - name: setmore_booking_url
+        label: Setmore Booking Page URL
+        type: string
+        description: Paste your OWN Setmore Booking Page URL here to activate the Booking window. Never paste your friend's URL.
+      - { name: opening_tue_sat, label: Tuesday to Saturday hours, type: string }
+      - { name: opening_sun, label: Sunday hours, type: string }
+      - { name: opening_mon, label: Monday hours, type: string }
+      - { name: logo, label: Original footer logo, type: image }
+      - { name: hero_logo, label: Small transparent logo in hero top right, type: image }
+      - name: hero_images
+        label: Homepage slideshow photos
+        type: image
+        list: true
+      - { name: shop_image, label: Inside the shop photo, type: image }
+      - { name: storefront_image, label: Shopfront photo, type: image }
+      - { name: accepts_walkins, label: Walk-ins welcome, type: boolean }
+      - { name: bookings_priority, label: Bookings take priority, type: boolean }
+      - { name: footer_note, label: Booking / walk-in notice, type: text }
+  - name: services
+    label: Services and prices
+    type: file
+    path: content/services.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Service name, type: string, required: true }
+      - { name: price, label: Price in AUD, type: number, required: true }
+      - { name: minutes, label: Service duration in minutes, type: number, required: true }
+      - { name: description, label: Short description, type: text }
+      - name: icon
+        label: Icon
+        type: select
+        options:
+          values: [scissors, sparkles, user, smile, droplets, eye, sun, zap]
+  - name: barbers
+    label: Barber profiles
+    type: file
+    path: content/barbers.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Barber name, type: string, required: true }
+      - { name: initial, label: Initial (shown before photo), type: string }
+      - { name: photo, label: Profile photo, type: image }
+      - { name: description, label: Short bio, type: text }
+      - { name: booking_url, label: Direct Setmore staff booking URL (optional), type: string }
+  - name: gallery
+    label: Haircut gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: Photo title, type: string, required: true }
+      - { name: category, label: Category, type: string }
+      - { name: image, label: Haircut photo, type: image, required: true }
+      - { name: alt, label: Photo description (accessibility), type: string }
