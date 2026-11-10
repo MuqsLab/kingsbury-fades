@@ -82,6 +82,7 @@ content:
       - { name: initial, label: Initial (shown before photo), type: string }
       - { name: photo, label: Profile photo, type: image }
       - { name: description, label: Short bio, type: text }
+      - { name: phone, label: Barber phone number (tap to call), type: string }
       - { name: booking_url, label: Direct Setmore staff booking URL (optional), type: string }
   - name: gallery
     label: Haircut gallery
