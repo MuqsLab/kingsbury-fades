@@ -44,7 +44,7 @@
   {
     "name": "Eyebrows",
     "price": 5,
-    "minutes": 10,
+    "minutes": 5,
     "description": "Quick eyebrow tidy-up.",
     "icon": "eye"
   },
@@ -65,14 +65,14 @@
   {
     "name": "Shampoo + Towel",
     "price": 10,
-    "minutes": 15,
+    "minutes": 10,
     "description": "Wash and finish.",
     "icon": "droplets"
   },
   {
-    "name": "Designs",
+    "name": "Hair Designs",
     "price": 5,
-    "minutes": 15,
+    "minutes": 10,
     "description": "Add some detail to your cut.",
     "icon": "zap"
   }
