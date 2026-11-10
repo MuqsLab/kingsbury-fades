@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Regular / Classic Haircut",
+    "price": 25,
+    "minutes": 35,
+    "description": "A sharp, timeless haircut styled your way.",
+    "icon": "scissors"
+  },
+  {
+    "name": "Fades",
+    "price": 25,
+    "minutes": 45,
+    "description": "Clean blends, crisp lines and fresh finishes.",
+    "icon": "sparkles"
+  },
+  {
+    "name": "Pension Haircut",
+    "price": 20,
+    "minutes": 30,
+    "description": "A fresh tidy-up at our pension rate.",
+    "icon": "user"
+  },
+  {
+    "name": "Beard Trim",
+    "price": 10,
+    "minutes": 15,
+    "description": "Shape and define your beard.",
+    "icon": "scissors"
+  },
+  {
+    "name": "Kids Haircut",
+    "price": 20,
+    "minutes": 30,
+    "description": "Fresh cuts for the little ones.",
+    "icon": "smile"
+  },
+  {
+    "name": "Hot Towel Clean Shave",
+    "price": 15,
+    "minutes": 25,
+    "description": "A smooth finish with a hot towel.",
+    "icon": "droplets"
+  },
+  {
+    "name": "Eyebrows",
+    "price": 5,
+    "minutes": 5,
+    "description": "Quick eyebrow tidy-up.",
+    "icon": "eye"
+  },
+  {
+    "name": "Threading",
+    "price": 10,
+    "minutes": 15,
+    "description": "Precise grooming and clean edges.",
+    "icon": "sparkles"
+  },
+  {
+    "name": "Facial Treatment",
+    "price": 15,
+    "minutes": 25,
+    "description": "Refresh and revive your skin.",
+    "icon": "sun"
+  },
+  {
+    "name": "Shampoo + Towel",
+    "price": 10,
+    "minutes": 10,
+    "description": "Wash and finish.",
+    "icon": "droplets"
+  },
+  {
+    "name": "Hair Designs",
+    "price": 5,
+    "minutes": 10,
+    "description": "Add some detail to your cut.",
+    "icon": "zap"
+  }
+]
