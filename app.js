@@ -61,7 +61,10 @@ function mountApprovedWidget(target,code){
 }
 function mountGoogleWidgets(s){
  const reviews=$('#google-reviews-live');
- if(!mountApprovedWidget(reviews,s.google_reviews_widget_embed_code))reviews.classList.add('needs-connection');
+ // RepU is embedded directly in index.html. Never replace its live widget with JSON markup.
+ if(reviews && !reviews.querySelector('[data-repu-inline]')){
+   if(!mountApprovedWidget(reviews,s.google_reviews_widget_embed_code))reviews.classList.add('needs-connection');
+ }
  const photos=$('#google-photos-live'), target=$('#google-photos-widget');
  if(mountApprovedWidget(target,s.google_photos_widget_embed_code))photos.hidden=false;
 }
